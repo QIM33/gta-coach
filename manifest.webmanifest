@@ -1,0 +1,16 @@
+{
+  "name": "Business Coach untuk GTA Online",
+  "short_name": "GTA Coach",
+  "description": "Mentor pribadi untuk pemain GTA Online: saldo GTA$, bisnis, event mingguan, dan langkah berikutnya.",
+  "lang": "id",
+  "start_url": "./#/dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e151f",
+  "theme_color": "#0e151f",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

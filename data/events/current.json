@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "verified",
+  "title": "Heist Event",
+  "week": {
+    "startsAt": "2026-11-05T10:00:00Z",
+    "endsAt": "2026-11-12T10:00:00Z"
+  },
+  "timeNote": "Jam reset mingguan sekitar 10.00 UTC (17.00 WIB) hari Kamis; jam pastinya bisa bergeser.",
+  "sourceLevel": "secondary",
+  "verificationNote": "Dicek silang dari tiga sumber sekunder yang isinya konsisten. Artikel Rockstar Newswire belum dibuka langsung. Item yang hanya disebut satu sumber tidak dimasukkan.",
+  "source": "https://www.rockstargames.com/newswire",
+  "sources": [
+    { "title": "RockstarINTEL: The Heist Event (5–11 November)", "url": "https://rockstarintel.com/gta-online-event-week-panther-statue-november-5th-11th/" },
+    { "title": "Timesaver: GTA Online Weekly Update 5–11 Nov 2026", "url": "https://timesaver.gg/blog/gta-online-weekly-update-november-5-11-2026" },
+    { "title": "GuruGamer: Heist Event Week (5–11 Nov 2026)", "url": "https://gurugamer.com/pc-console/gta-online-heist-event-week-november-5-11-2026-27542" }
+  ],
+  "fetchedAt": "2026-11-07T06:30:00Z",
+  "verifiedAt": "2026-11-07T06:45:00Z",
+  "items": [
+    { "type": "multiplier", "value": 3, "label": "Mansion Raid", "note": "GTA$ dan RP" },
+    { "type": "multiplier", "value": 2, "label": "Community Race Series" },
+    {
+      "type": "first-completion",
+      "value": 2,
+      "label": "Bonus penyelesaian pertama: Original Heists, The Doomsday Heist (semua Act), The Diamond Casino Heist, KnoWay Out"
+    },
+    {
+      "type": "guaranteed-target",
+      "target": "cayo-perico-heist",
+      "value": 1900000,
+      "label": "Cayo Perico Heist: Panther Statue dijamin pada run pertama minggu ini",
+      "note": "GTA$1,900,000 (Normal) atau GTA$2,090,000 (Hard Mode), sebelum potongan"
+    },
+    {
+      "type": "guaranteed-target",
+      "target": "kortz-center-heist",
+      "label": "Kortz Center Heist: lukisan The Outcome of Endeavour dijamin pada run pertama",
+      "note": "Nilai jualnya belum dipublikasikan Rockstar"
+    },
+    { "type": "discount", "percent": 40, "label": "Facility (termasuk upgrade dan modifikasi)" },
+    { "type": "discount", "percent": 40, "label": "Casino Master Penthouse (termasuk upgrade dan modifikasi)" },
+    { "type": "discount", "percent": 40, "label": "High-End Apartment" },
+    { "type": "discount", "percent": 30, "label": "Kendaraan: Benefactor Vorschlaghammer, Cheval Taipan, Dinka Blista Kanjo, Grotti Cheetah, HVY Insurgent, Invetero Coquette D5, Maibatsu Penumbra FF, Pegassi Reaper, Western Company Besra, Western Rampant Rocket" },
+    { "type": "discount", "percent": 25, "label": "Grotti Veleno GT (diskon pembelian pertama)" },
+    { "type": "challenge", "reward": 100000, "label": "Tantangan mingguan: menangkan satu Adversary Mode" },
+    { "type": "reward", "label": "Login minggu ini: dekorasi lukisan Mansion \"The Great Circle Back\"" },
+    { "type": "podium", "label": "Kendaraan podium Lucky Wheel: Överflöd Entity XXR" }
+  ]
+}

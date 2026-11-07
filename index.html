@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0E151F">
+  <meta name="description" content="Mentor pribadi untuk pemain GTA Online: kelola saldo GTA$, bisnis, dan strategi keuntungan.">
+  <title>Business Coach untuk GTA Online</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E151F'/%3E%3Cpath d='M9 22h14' stroke='%2372CC72' stroke-width='3'/%3E%3Cpath d='M9 15h9' stroke='%23E9EDF2' stroke-width='3'/%3E%3Cpath d='M9 8h14' stroke='%23E9EDF2' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <div class="app">
+    <header class="topbar">
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" id="menu-btn">
+        <span class="menu-btn__bars" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+      <a class="brand brand--compact" href="#/dashboard">
+        <span class="brand__name">Business Coach</span>
+        <span class="brand__sub">untuk GTA Online</span>
+      </a>
+    </header>
+
+    <nav class="nav" id="nav" aria-label="Menu utama">
+      <a class="brand" href="#/dashboard">
+        <span class="brand__name">Business Coach</span>
+        <span class="brand__sub">untuk GTA Online</span>
+      </a>
+      <ul class="nav__list" id="nav-list"></ul>
+      <p class="nav__foot" id="nav-foot"></p>
+    </nav>
+    <div class="scrim" id="scrim" hidden></div>
+
+    <main class="main" id="main" tabindex="-1">
+      <div class="boot" id="boot">
+        <h1 class="page-title">Memuat…</h1>
+        <p>Jika pesan ini tidak hilang, website kemungkinan dibuka langsung dari folder (alamat diawali <code>file://</code>). Buka melalui ekstensi Live Server di VS Code. Langkahnya ada di file <code>README.md</code>.</p>
+      </div>
+    </main>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <dialog class="dialog" id="confirm-dialog" aria-labelledby="confirm-title">
+    <form method="dialog" class="dialog__body">
+      <h2 class="dialog__title" id="confirm-title"></h2>
+      <div class="dialog__message" id="confirm-message"></div>
+      <div class="dialog__actions">
+        <button class="btn btn--ghost" value="cancel" type="submit">Batal</button>
+        <button class="btn btn--primary" value="ok" type="submit" id="confirm-ok">Lanjutkan</button>
+      </div>
+    </form>
+  </dialog>
+
+  <noscript><p class="noscript">Website ini membutuhkan JavaScript. Aktifkan JavaScript di browser Anda.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "note": "Urutan ini panduan umum. Langkah berikutnya di dashboard dihitung dari kondisi akun Anda dan bisa berbeda.",
+  "stages": [
+    {
+      "id": "fondasi",
+      "title": "Fondasi",
+      "goal": "Website mengenal kondisi akun Anda dan progres aman tersimpan.",
+      "steps": [
+        { "id": "isi-profil", "text": "Isi profil pemain: saldo, rank, dan kebiasaan bermain.", "auto": { "type": "profile" } },
+        { "id": "cadangan-pertama", "text": "Unduh cadangan data pertama.", "auto": { "type": "backup" } }
+      ]
+    },
+    {
+      "id": "bisnis-pertama",
+      "title": "Bisnis pertama: Acid Lab",
+      "goal": "Sumber pendapatan pasif pertama dengan modal paling kecil di daftar.",
+      "steps": [
+        { "id": "misi-first-dose", "text": "Selesaikan misi persiapan Acid Lab dari Dax (rangkaian First Dose)." },
+        { "id": "punya-acid-lab", "text": "Bayar Mutt untuk Acid Lab (GTA$750,000).", "auto": { "type": "owned", "id": "acid-lab" } },
+        { "id": "fooligan-10", "text": "Selesaikan 10 Fooligan Jobs untuk membuka upgrade peralatan." },
+        { "id": "upgrade-acid", "text": "Pasang upgrade peralatan Acid Lab (GTA$250,000).", "auto": { "type": "upgrade", "id": "acid-lab", "upgrade": "equipment" } }
+      ]
+    },
+    {
+      "id": "pendapatan-aktif",
+      "title": "Pendapatan aktif",
+      "goal": "Aktivitas yang bisa diulang dengan bayaran besar per jam.",
+      "steps": [
+        { "id": "punya-aktif", "text": "Miliki Kosatka (Cayo Perico Heist) atau Auto Shop.", "auto": { "type": "ownedAny", "ids": ["cayo-perico-heist", "auto-shop"] } },
+        { "id": "run-pertama", "text": "Selesaikan heist Cayo Perico atau kontrak Auto Shop pertama." }
+      ]
+    },
+    {
+      "id": "pasif-kedua",
+      "title": "Pasif besar: Bunker",
+      "goal": "Pendapatan pasif kedua yang berjalan bersamaan dengan Acid Lab.",
+      "steps": [
+        { "id": "punya-bunker", "text": "Beli Bunker (termurah GTA$1,165,000 di Paleto Forest).", "auto": { "type": "owned", "id": "bunker" } },
+        { "id": "upgrade-bunker-alat", "text": "Pasang upgrade peralatan Bunker (GTA$1,155,000).", "auto": { "type": "upgrade", "id": "bunker", "upgrade": "equipment" } },
+        { "id": "upgrade-bunker-staf", "text": "Pasang upgrade staf Bunker (GTA$598,500).", "auto": { "type": "upgrade", "id": "bunker", "upgrade": "staff" } }
+      ]
+    },
+    {
+      "id": "diversifikasi",
+      "title": "Diversifikasi",
+      "goal": "Beberapa sumber pendapatan agar tidak bergantung pada satu bisnis.",
+      "steps": [
+        { "id": "empat-bisnis", "text": "Miliki minimal 4 bisnis dari daftar Bisnis.", "auto": { "type": "ownedCount", "min": 4 } },
+        { "id": "cek-event", "text": "Biasakan cek Event mingguan setiap Kamis sebelum memilih aktivitas." }
+      ]
+    },
+    {
+      "id": "jangka-panjang",
+      "title": "Kerajaan bisnis",
+      "goal": "Tujuan jangka panjang dengan modal sangat besar.",
+      "steps": [
+        { "id": "punya-mansion", "text": "Miliki Mansion dengan Art Studio untuk Kortz Center Heist.", "auto": { "type": "owned", "id": "kortz-center-heist" } }
+      ]
+    }
+  ]
+}

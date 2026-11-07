@@ -1,0 +1,56 @@
+# Mengambil draf event mingguan GTA Online setiap hari pukul 11.30 UTC (18.30 WIB)
+# dan membuat Pull Request jika ada minggu baru. Bisa juga dijalankan manual
+# dari tab Actions → "Event mingguan" → "Run workflow".
+name: Event mingguan
+
+on:
+  schedule:
+    - cron: '30 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-events
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Jalankan pengujian
+        run: node --test
+
+      - name: Ambil draf event
+        id: fetch
+        run: node scripts/fetch-events.mjs
+
+      - name: Buat Pull Request
+        if: steps.fetch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WEEK: ${{ steps.fetch.outputs.week }}
+          TITLE: ${{ steps.fetch.outputs.title }}
+          BODY_PATH: ${{ steps.fetch.outputs.body_path }}
+        run: |
+          BRANCH="event-$WEEK"
+          if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null; then
+            echo "Branch $BRANCH sudah ada; Pull Request minggu ini sudah dibuat sebelumnya."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/events
+          git commit -m "Draf event mingguan $WEEK: $TITLE"
+          git push -u origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" --title "Event mingguan $WEEK: $TITLE" --body-file "$BODY_PATH"

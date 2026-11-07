@@ -1,0 +1,10 @@
+{
+  "name": "gta-online-business-coach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mentor interaktif bisnis GTA Online. Website statis tanpa dependensi.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

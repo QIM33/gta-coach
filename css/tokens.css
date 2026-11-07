@@ -1,0 +1,58 @@
+/*
+  Design tokens — satu-satunya tempat warna, huruf, dan jarak didefinisikan.
+  Ubah nilai di sini, seluruh tampilan ikut berubah.
+
+  Arah visual: malam di Los Santos. Latar biru-gelap seperti langit kota,
+  baris menu yang dipilih dibalik putih seperti menu interaksi di dalam game,
+  dan hijau uang dipakai khusus untuk angka GTA$.
+*/
+:root {
+  /* Warna dasar */
+  --c-night: #0e151f;      /* latar halaman */
+  --c-panel: #16202c;      /* permukaan panel */
+  --c-panel-2: #1c2836;    /* permukaan saat hover / bagian dalam panel */
+  --c-line: #2a394b;       /* garis dan batas */
+  --c-text: #e9edf2;       /* teks utama, juga warna sorotan menu */
+  --c-muted: #97a3b4;      /* teks pendukung */
+  --c-faint: #6b788a;      /* teks paling lemah, hanya untuk info sekunder */
+
+  /* Warna bermakna */
+  --c-cash: #72cc72;       /* angka GTA$ */
+  --c-cash-soft: rgb(114 204 114 / 0.14);
+  --c-amber: #f2a93b;      /* perlu perhatian, fokus keyboard */
+  --c-amber-soft: rgb(242 169 59 / 0.14);
+  --c-danger: #ef6a62;     /* aksi berbahaya, kesalahan */
+  --c-danger-soft: rgb(239 106 98 / 0.14);
+  --c-info: #6cb4ec;       /* informasi netral */
+  --c-info-soft: rgb(108 180 236 / 0.12);
+
+  /* Huruf: Bahnschrift (bawaan Windows) memberi kesan rambu jalan raya */
+  --font-display: "Bahnschrift", "DIN Alternate", "DIN Condensed", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Skala huruf (rasio ~1.25) */
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.5625rem;
+  --step-3: 2rem;
+  --step-4: 2.75rem;
+
+  /* Jarak (kelipatan 4px) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+
+  --radius-s: 3px;
+  --radius-m: 6px;
+
+  --nav-w: 272px;
+  --content-max: 960px;
+  --topbar-h: 56px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

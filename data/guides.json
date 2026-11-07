@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-07",
+  "guides": [
+    {
+      "id": "membaca-angka",
+      "title": "Cara membaca angka di website ini",
+      "summary": "Laba bersih, GTA$ per jam aktif, per jam online, dan balik modal: apa bedanya dan kapan memakai yang mana.",
+      "sections": [
+        {
+          "heading": "Laba bersih per siklus",
+          "points": [
+            "Pendapatan satu siklus (satu kali jual stok, satu heist, satu kontrak) dikurangi biaya siklus itu, misalnya suplai atau biaya setup.",
+            "Selalu ditampilkan sebagai rentang. Batas bawah memakai pendapatan terendah, batas atas pendapatan tertinggi."
+          ]
+        },
+        {
+          "heading": "GTA$ per jam aktif vs per jam online",
+          "points": [
+            "Per jam aktif: laba dibagi waktu Anda benar-benar bekerja (beli suplai, jual, misi). Cocok untuk misi dan heist.",
+            "Per jam online: laba bisnis produksi dibagi lama produksinya. Stok baru penuh jika Anda online selama waktu itu.",
+            "Membandingkan bisnis produksi dengan misi memakai angka per jam aktif akan menyesatkan. Contoh: Acid Lab terlihat ratusan ribu GTA$ per jam aktif, tetapi sekitar GTA$35,800 per jam online."
+          ]
+        },
+        {
+          "heading": "Balik modal",
+          "points": [
+            "Berapa siklus atau jam sampai modal kembali. Rentang tercepat memakai laba tertinggi, terlama memakai laba terendah.",
+            "Harga bisnis dan upgrade yang sudah Anda tandai dimiliki tidak dihitung lagi."
+          ]
+        },
+        {
+          "heading": "Tingkat keyakinan",
+          "points": [
+            "Tinggi: semua angka dari sumber. Sedang: sebagian angka perkiraan (biasanya durasi). Rendah: data sumber belum lengkap.",
+            "Rekomendasi memberi penalti 15% (sedang) dan 30% (rendah) saat membandingkan, agar angka yang kurang pasti tidak menang begitu saja."
+          ]
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "dana-cadangan",
+      "title": "Dana cadangan: jangan habiskan seluruh saldo",
+      "summary": "Kenapa sebagian saldo disisihkan dan tidak pernah dipakai untuk membeli bisnis.",
+      "sections": [
+        {
+          "heading": "Bisnis butuh biaya berjalan",
+          "points": [
+            "Bisnis produksi butuh suplai setiap siklus. Satu stok penuh Acid Lab butuh suplai GTA$192,000; Bunker sekitar GTA$375,000.",
+            "Jika seluruh saldo habis untuk membeli properti, bisnis baru itu tidak bisa langsung berproduksi."
+          ]
+        },
+        {
+          "heading": "Cara website memakainya",
+          "points": [
+            "Dana cadangan bawaan 15% dari saldo, bisa diubah di Profil (0–50%).",
+            "Rekomendasi dan cek keterjangkauan hanya memakai dana investasi (saldo dikurangi cadangan).",
+            "Rencana sesi boleh memakai dana cadangan untuk membeli suplai, karena itulah tujuan cadangan."
+          ]
+        }
+      ],
+      "sources": [
+        { "title": "GTA Boss: Acid Lab", "url": "https://www.gtaboss.gg/gta-5-online/businesses/acid-lab" },
+        { "title": "GTA Boss: Bunkers", "url": "https://www.gtaboss.gg/gta-5-online/businesses/bunkers" }
+      ]
+    },
+    {
+      "id": "bisnis-produksi",
+      "title": "Bisnis produksi: suplai, produksi, jual",
+      "summary": "Siklus dasar Acid Lab dan Bunker, dan kenapa upgrade peralatan biasanya dibeli lebih dulu.",
+      "sections": [
+        {
+          "heading": "Siklusnya",
+          "points": [
+            "Isi suplai (beli atau curi), tunggu produksi berjalan, lalu jual stok lewat misi penjualan.",
+            "Produksi hanya berjalan selama Anda berada di sesi online, jadi isi suplai di awal sesi.",
+            "Mencuri suplai gratis tetapi memakan waktu; membeli suplai menghemat waktu."
+          ]
+        },
+        {
+          "heading": "Acid Lab",
+          "points": [
+            "Stok penuh 160 unit. Tanpa upgrade sekitar 6 jam online; dengan upgrade peralatan sekitar 4 jam.",
+            "Upgrade peralatan (GTA$250,000) menaikkan nilai per unit dari GTA$1,485 menjadi GTA$2,095. Tanpa upgrade, laba setelah membeli suplai sangat tipis.",
+            "Penjualan solo memakai satu motor dengan batas waktu 20 menit."
+          ]
+        },
+        {
+          "heading": "Bunker",
+          "points": [
+            "Dengan upgrade peralatan dan staf: 100 unit dalam sekitar 11,7 jam online, bernilai GTA$1,050,000 jika dijual ke Los Santos atau GTA$700,000 ke Blaine County.",
+            "Upgrade keamanan tidak menambah pendapatan."
+          ]
+        }
+      ],
+      "sources": [
+        { "title": "GTA Wiki: Acid Product", "url": "https://gta.wiki/w/Acid_Product" },
+        { "title": "GTA Boss: Acid Lab", "url": "https://www.gtaboss.gg/gta-5-online/businesses/acid-lab" },
+        { "title": "GTA Boss: Bunkers", "url": "https://www.gtaboss.gg/gta-5-online/businesses/bunkers" }
+      ]
+    },
+    {
+      "id": "cayo-perico-1-73",
+      "title": "Cayo Perico setelah Title Update 1.73",
+      "summary": "Nilai target, potongan, jeda, dan Hard Mode setelah potongan bayaran Juli 2026.",
+      "sections": [
+        {
+          "heading": "Nilai target utama (Normal)",
+          "points": [
+            "Sinsimito Tequila GTA$400,000, Ruby Necklace GTA$560,000, Bearer Bonds GTA$616,000, Pink Diamond GTA$910,000.",
+            "Panther Statue GTA$1,900,000 hanya muncul saat event.",
+            "Hard Mode menambah 10%. Aktif jika Anda membayar setup dalam 48 menit nyata setelah Pavel menghubungi."
+          ]
+        },
+        {
+          "heading": "Potongan dan biaya",
+          "points": [
+            "Fence mengambil 10% dan Pavel 2% dari hasil kotor.",
+            "Run ulang dikenai biaya setup GTA$100,000; run pertama gratis."
+          ]
+        },
+        {
+          "heading": "Jeda",
+          "points": [
+            "Solo: 144 menit nyata sebelum finale berikutnya. Bersama crew: 48 menit.",
+            "Run ulang di minggu yang sama lebih mungkin mendapat target bernilai rendah."
+          ]
+        },
+        {
+          "heading": "Hati-hati panduan lama",
+          "points": [
+            "Title Update 1.73 (Juli 2026) memotong bayaran beberapa heist lama hingga sekitar 30%. Pink Diamond turun dari sekitar GTA$1,3 juta menjadi GTA$910,000.",
+            "Video atau artikel yang terbit sebelum Juli 2026 kemungkinan masih memakai angka lama."
+          ]
+        }
+      ],
+      "sources": [
+        { "title": "GTA BOOM: Cayo Perico payout & targets", "url": "https://www.gtaboom.com/cayo-perico-heist-max-payout-cooldowns-bonus-payouts-and-all-targets/" },
+        { "title": "GTA Boss: Heist payouts", "url": "https://www.gtaboss.gg/gta-5-online/heists" },
+        { "title": "GTA Intel: 2026 payout rebalance", "url": "https://gtaintel.com/news/gta-online-2026-payout-rebalance" }
+      ]
+    },
+    {
+      "id": "event-mingguan",
+      "title": "Event mingguan: cara membaca dan kapan berganti",
+      "summary": "Kapan event reset, jenis bonus yang perlu diperhatikan, dan kenapa website hanya memakai data terverifikasi.",
+      "sections": [
+        {
+          "heading": "Jadwal",
+          "points": [
+            "Event berganti setiap Kamis, sekitar pukul 10.00 UTC (17.00 WIB). Jam pastinya bisa bergeser.",
+            "Bonus berlaku sampai reset berikutnya. Setelah itu website otomatis menandai data lama sebagai kedaluwarsa."
+          ]
+        },
+        {
+          "heading": "Jenis bonus",
+          "points": [
+            "Pengali GTA$ dan RP (2X, 3X) pada aktivitas tertentu.",
+            "Bonus penyelesaian pertama: penyelesaian pertama heist tertentu dalam minggu itu dibayar lebih tinggi.",
+            "Target dijamin, misalnya Panther Statue pada run pertama Cayo Perico.",
+            "Diskon properti dan kendaraan. Diskon hanya menguntungkan jika barang itu memang ada di rencana Anda."
+          ]
+        },
+        {
+          "heading": "Sumber data",
+          "points": [
+            "Sumber resmi adalah Rockstar Newswire. Website menandai data yang hanya dicek dari situs komunitas sebagai sumber sekunder."
+          ]
+        }
+      ],
+      "sources": [
+        { "title": "Rockstar Newswire", "url": "https://www.rockstargames.com/newswire" },
+        { "title": "Esports.net: GTA Online weekly update & reset time", "url": "https://www.esports.net/wiki/guides/gta-online-weekly-update/" },
+        { "title": "GTA Intel: 2026 payout rebalance", "url": "https://gtaintel.com/news/gta-online-2026-payout-rebalance" }
+      ]
+    },
+    {
+      "id": "solo-vs-crew",
+      "title": "Bermain solo atau bersama crew",
+      "summary": "Semua bisnis di daftar bisa dijalankan sendirian, tetapi beberapa aktivitas membayar lebih atau lebih sering jika bersama pemain lain.",
+      "sections": [
+        {
+          "heading": "Yang lebih menguntungkan bersama",
+          "points": [
+            "Cayo Perico: jeda finale bersama crew 48 menit, jauh lebih singkat dari 144 menit saat solo. Emas di dalam kompleks umumnya butuh dua pemain.",
+            "Auto Shop, Union Depository Contract: GTA$300,000 solo, naik menjadi GTA$375,000 dengan empat pemain."
+          ]
+        },
+        {
+          "heading": "Yang sama saja",
+          "points": [
+            "Penjualan Acid Lab solo selalu memakai satu motor.",
+            "Semua target Bail Office dan perampokan Salvage Yard bisa dikerjakan sendirian."
+          ]
+        }
+      ],
+      "sources": [
+        { "title": "GTA BOOM: Cayo Perico payout & targets", "url": "https://www.gtaboom.com/cayo-perico-heist-max-payout-cooldowns-bonus-payouts-and-all-targets/" },
+        { "title": "GTA Boss: Auto Shops", "url": "https://www.gtaboss.gg/gta-5-online/businesses/auto-shops" },
+        { "title": "GTA Boss: Bail Office guide", "url": "https://www.gtaboss.gg/gta-5-online/guides/gta-online-bail-office-guide" },
+        { "title": "Timesaver: Salvage Yard robbery payouts 2026", "url": "https://timesaver.gg/blog/gta-online-salvage-yard-robbery-payouts-2026" }
+      ]
+    }
+  ]
+}

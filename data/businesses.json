@@ -1,0 +1,769 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-07",
+  "platformNote": "Data dicek untuk GTA Online versi PC Enhanced, setelah Title Update 1.73 (Juli 2026). Ketersediaan di PC Legacy belum dicek.",
+  "fieldGuide": {
+    "payout": "Pendapatan kotor per siklus (min–maks) sebelum dikurangi biaya per siklus.",
+    "costPerCycle": "Biaya yang dikeluarkan setiap siklus (suplai, biaya setup). null = tidak tercatat di sumber.",
+    "activeMinutes": "Menit bermain aktif per siklus (beli suplai, jual, misi). null = belum ada data.",
+    "productionMinutes": "Waktu produksi sampai stok penuh, berjalan selama Anda berada di sesi online.",
+    "cycleMinutes": "Untuk pendapatan pasif berkala: lama satu siklus pembayaran.",
+    "estimates": "Daftar kolom yang merupakan perkiraan, bukan angka dari sumber.",
+    "limitPerWeek": "Batas berapa kali siklus ini bisa dikerjakan per minggu.",
+    "useForRanking": "false = skenario alternatif, tidak dipakai mesin rekomendasi (agar tidak terlalu optimistis)."
+  },
+  "entries": [
+    {
+      "id": "acid-lab",
+      "name": "Acid Lab",
+      "category": "produksi",
+      "summary": "Lab bergerak di dalam truk Brickade. Modal kecil, tidak bisa diserang, dan bisa dijual sendirian dengan satu motor.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "lengkap",
+      "purchase": {
+        "price": 750000,
+        "note": "Dibayar ke Mutt setelah misi persiapan Acid Lab. Alternatif tanpa misi: beli Brickade 6x6 di Warstock seharga GTA$1,450,000."
+      },
+      "requirements": [
+        "Selesaikan misi persiapan Acid Lab (rangkaian First Dose dari Dax), lalu bayar Mutt di Freakshop.",
+        "Upgrade peralatan terbuka setelah menyelesaikan 10 Fooligan Jobs."
+      ],
+      "upgrades": [
+        {
+          "id": "equipment",
+          "name": "Upgrade peralatan",
+          "price": 250000,
+          "recommended": true,
+          "effect": "Stok penuh lebih cepat (6 jam menjadi 4 jam) dan nilai per unit naik dari GTA$1,485 menjadi GTA$2,095."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "upgraded",
+          "label": "Dengan upgrade peralatan",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 335200,
+            "max": 351840
+          },
+          "costPerCycle": 192000,
+          "activeMinutes": {
+            "min": 10,
+            "max": 20
+          },
+          "productionMinutes": 240,
+          "estimates": [
+            "activeMinutes"
+          ],
+          "notes": [
+            "160 unit × GTA$2,095 = GTA$335,200. Batas atas memakai bonus +5% dari memberi nama produk.",
+            "Biaya suplai: 320 unit suplai × GTA$600 = GTA$192,000 untuk stok penuh."
+          ]
+        },
+        {
+          "id": "base",
+          "label": "Tanpa upgrade",
+          "upgrades": [],
+          "payout": {
+            "min": 237600,
+            "max": 249440
+          },
+          "costPerCycle": 192000,
+          "activeMinutes": {
+            "min": 10,
+            "max": 20
+          },
+          "productionMinutes": 360,
+          "estimates": [
+            "activeMinutes"
+          ],
+          "notes": [
+            "Laba tanpa upgrade sangat tipis jika suplai dibeli. Pasang upgrade peralatan sesegera mungkin."
+          ]
+        }
+      ],
+      "tips": [
+        "Misi curi suplai gratis tetapi memakan waktu; membeli suplai menghemat waktu.",
+        "Penjualan solo selalu memakai satu motor Manchez Scout C dengan batas waktu 20 menit.",
+        "Speed boost harian di meja kimia mempercepat produksi sampai 80 unit."
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "title": "GTA Wiki: Acid Lab",
+          "url": "https://gta.wiki/wiki/Acid_Lab"
+        },
+        {
+          "title": "GTA Wiki: Acid Product",
+          "url": "https://gta.wiki/w/Acid_Product"
+        },
+        {
+          "title": "GTA Boss: Acid Lab",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/acid-lab"
+        }
+      ]
+    },
+    {
+      "id": "bunker",
+      "name": "Bunker",
+      "category": "produksi",
+      "summary": "Pabrik senjata bawah tanah. Modal besar setelah upgrade, tetapi salah satu sumber pasif terbesar.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": 1165000,
+        "note": "Lokasi termurah: Paleto Forest. Lokasi lain GTA$1,450,000–2,375,000."
+      },
+      "requirements": [
+        "Tidak butuh properti lain."
+      ],
+      "upgrades": [
+        {
+          "id": "equipment",
+          "name": "Upgrade peralatan",
+          "price": 1155000,
+          "recommended": true,
+          "effect": "Nilai stok naik serta produksi dan riset lebih cepat."
+        },
+        {
+          "id": "staff",
+          "name": "Upgrade staf",
+          "price": 598500,
+          "recommended": true,
+          "effect": "Produksi dan riset lebih cepat."
+        },
+        {
+          "id": "security",
+          "name": "Upgrade keamanan",
+          "price": 351000,
+          "recommended": false,
+          "effect": "Mengurangi peluang serangan; tidak menambah pendapatan."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "full-ls",
+          "label": "Upgrade peralatan + staf, jual ke Los Santos",
+          "upgrades": [
+            "equipment",
+            "staff"
+          ],
+          "payout": {
+            "min": 1050000,
+            "max": 1050000
+          },
+          "costPerCycle": 375000,
+          "activeMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "productionMinutes": 700,
+          "estimates": [
+            "activeMinutes"
+          ],
+          "notes": [
+            "100 unit stok penuh, sekitar 7 menit per unit (±11,7 jam).",
+            "Biaya suplai: 5 kali isi penuh × GTA$75,000.",
+            "Lobi publik yang ramai bisa memberi bonus High Demand di atas angka ini."
+          ]
+        },
+        {
+          "id": "full-blaine",
+          "label": "Upgrade peralatan + staf, jual ke Blaine County",
+          "upgrades": [
+            "equipment",
+            "staff"
+          ],
+          "payout": {
+            "min": 700000,
+            "max": 700000
+          },
+          "costPerCycle": 375000,
+          "activeMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "productionMinutes": 700,
+          "estimates": [
+            "activeMinutes"
+          ],
+          "notes": [
+            "Penjualan ke Los Santos membayar sekitar 50% lebih tinggi."
+          ],
+          "useForRanking": false
+        }
+      ],
+      "tips": [
+        "Tanpa upgrade, stok penuh bernilai GTA$750,000 (Los Santos), tetapi waktu produksinya belum terverifikasi sehingga tidak dihitung."
+      ],
+      "cautions": [
+        "Total modal lengkap (lokasi termurah + peralatan + staf) sekitar GTA$2,918,500."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Bunkers",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/bunkers"
+        },
+        {
+          "title": "GrindMap: GTA Online money methods",
+          "url": "https://grindmap.com/gta-online"
+        }
+      ]
+    },
+    {
+      "id": "nightclub",
+      "name": "Nightclub",
+      "category": "pasif",
+      "summary": "Brankas klub terisi selama Anda online jika popularitas tinggi. Gudang barangnya baru menguntungkan setelah punya banyak bisnis lain.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": 1080000,
+        "note": "Lokasi termurah: Elysian Island. Lokasi lain sampai GTA$1,700,000."
+      },
+      "requirements": [
+        "Tidak butuh properti lain. Bisa dikelola sebagai CEO, VIP, atau MC President."
+      ],
+      "upgrades": [
+        {
+          "id": "equipment",
+          "name": "Upgrade peralatan",
+          "price": 1425000,
+          "recommended": false,
+          "effect": "Menggandakan kecepatan produksi gudang. Hanya berguna jika Anda punya bisnis pemasok."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "safe",
+          "label": "Brankas popularitas (tanpa gudang)",
+          "upgrades": [],
+          "payout": {
+            "min": null,
+            "max": 50000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 48,
+          "passive": true,
+          "notes": [
+            "Maksimal GTA$50,000 per hari game (48 menit nyata) saat popularitas penuh; turun tajam saat popularitas rendah.",
+            "Hanya terisi saat Anda berada di sesi. Brankas penuh di GTA$250,000 dan harus dikosongkan.",
+            "Popularitas dijaga lewat misi manajemen klub atau memesan ulang DJ (GTA$10,000)."
+          ]
+        }
+      ],
+      "tips": [
+        "Gudang (7 kategori barang) membutuhkan bisnis pemasok dan teknisi; belum dihitung di sini."
+      ],
+      "cautions": [
+        "Penjualan gudang di atas 89 barang butuh Mule Custom, di atas 179 butuh Pounder Custom."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Nightclubs",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/nightclubs"
+        }
+      ]
+    },
+    {
+      "id": "cayo-perico-heist",
+      "name": "Cayo Perico Heist (Kosatka)",
+      "category": "heist",
+      "summary": "Heist yang bisa dikerjakan sendirian dari kapal selam Kosatka. Masih sumber uang solo yang kuat meski bayarannya dipotong pada Juli 2026.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "lengkap",
+      "purchase": {
+        "price": 2200000,
+        "note": "Harga dasar Kosatka di Warstock Cache & Carry."
+      },
+      "requirements": [
+        "Beli Kosatka, lalu selesaikan misi pengintaian dan persiapan pertama."
+      ],
+      "upgrades": [],
+      "scenarios": [
+        {
+          "id": "repeat-solo",
+          "label": "Run ulang solo (bersih, Normal)",
+          "upgrades": [],
+          "payout": {
+            "min": 700000,
+            "max": 1000000
+          },
+          "costPerCycle": 100000,
+          "activeMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "estimates": [
+            "activeMinutes"
+          ],
+          "cooldownMinutes": 144,
+          "notes": [
+            "Rentang bersih per run solo yang rapi, sudah termasuk target sekunder dan potongan 12% (fence 10% + Pavel 2%).",
+            "Biaya setup GTA$100,000 hanya untuk run ulang; run pertama gratis.",
+            "Target utama setelah Title Update 1.73 (Normal): Tequila GTA$400,000, Ruby Necklace GTA$560,000, Bearer Bonds GTA$616,000, Pink Diamond GTA$910,000. Hard Mode +10%.",
+            "Jeda solo 144 menit nyata sebelum finale berikutnya."
+          ]
+        }
+      ],
+      "tips": [
+        "Hard Mode (+10%) aktif jika Anda membayar setup dalam 48 menit nyata setelah Pavel menghubungi.",
+        "Run ulang di minggu yang sama lebih mungkin mendapat target bernilai rendah."
+      ],
+      "cautions": [
+        "Bayaran target dipotong hingga sekitar 30% oleh Title Update 1.73 (Juli 2026). Banyak panduan lama masih memakai angka sebelum potongan."
+      ],
+      "sources": [
+        {
+          "title": "GTA BOOM: Cayo Perico max payout & targets",
+          "url": "https://www.gtaboom.com/cayo-perico-heist-max-payout-cooldowns-bonus-payouts-and-all-targets/"
+        },
+        {
+          "title": "GTA Boss: Heist payouts",
+          "url": "https://www.gtaboss.gg/gta-5-online/heists"
+        },
+        {
+          "title": "GrindMap: GTA Online money methods",
+          "url": "https://grindmap.com/gta-online"
+        },
+        {
+          "title": "GTA Intel: 2026 payout rebalance",
+          "url": "https://gtaintel.com/news/gta-online-2026-payout-rebalance"
+        }
+      ]
+    },
+    {
+      "id": "auto-shop",
+      "name": "Auto Shop",
+      "category": "misi",
+      "summary": "Kontrak perampokan yang bisa diulang dengan bayaran tetap. Modal sedang dan cocok untuk solo.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "lengkap",
+      "purchase": {
+        "price": 1670000,
+        "note": "Lokasi termurah: Mission Row. Lokasi lain GTA$1,705,000–1,920,000."
+      },
+      "requirements": [
+        "Tidak butuh properti lain."
+      ],
+      "upgrades": [
+        {
+          "id": "car-lift",
+          "name": "Car Lift",
+          "price": 650000,
+          "recommended": false,
+          "effect": "Slot mobil pelanggan kedua (GTA$20,000–30,000 per mobil)."
+        },
+        {
+          "id": "staff",
+          "name": "Staf (per orang)",
+          "price": 385000,
+          "recommended": false,
+          "effect": "Mengantar mobil pelanggan untuk Anda; kerusakan dipotong dari bayaran."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "contract",
+          "label": "Kontrak biasa (Superdollar Deal dan lainnya)",
+          "upgrades": [],
+          "payout": {
+            "min": 153000,
+            "max": 166500
+          },
+          "costPerCycle": null,
+          "activeMinutes": {
+            "min": 20,
+            "max": 45
+          },
+          "notes": [
+            "Bayaran untuk pemimpin setelah potongan 10% Sessanta dan KDJ.",
+            "Bonus satu kali GTA$75,000 untuk penyelesaian pertama tiap kontrak."
+          ]
+        },
+        {
+          "id": "union-depository",
+          "label": "Union Depository Contract (solo)",
+          "upgrades": [],
+          "payout": {
+            "min": 270000,
+            "max": 270000
+          },
+          "costPerCycle": null,
+          "activeMinutes": {
+            "min": 20,
+            "max": 45
+          },
+          "notes": [
+            "GTA$300,000 kotor solo, GTA$270,000 setelah potongan 10%."
+          ],
+          "useForRanking": false
+        }
+      ],
+      "tips": [
+        "Exotic Exports harian (setelah kontrak pertama): GTA$20,000 per mobil, bonus GTA$100,000 untuk 10 mobil."
+      ],
+      "cautions": [
+        "Biaya memulai kontrak tidak tercatat di sumber, sehingga dihitung GTA$0."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Auto Shops",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/auto-shops"
+        },
+        {
+          "title": "GTA Side: Best paying missions after 1.73",
+          "url": "https://gtaside.com/tips/gta5/best-missions/"
+        }
+      ]
+    },
+    {
+      "id": "agency",
+      "name": "Agency",
+      "category": "misi",
+      "summary": "Markas Franklin. Kontrak Dr. Dre membayar besar sekali per minggu, ditambah Security Contract dan Payphone Hit.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": 2010000,
+        "note": "Lokasi termurah: Little Seoul. Lokasi lain GTA$2,145,000–2,830,000."
+      },
+      "requirements": [
+        "Tidak butuh properti lain.",
+        "Payphone Hit terbuka setelah minimal 3 Security Contract."
+      ],
+      "upgrades": [],
+      "scenarios": [
+        {
+          "id": "dre-contract",
+          "label": "Kontrak Dr. Dre (VIP Contract)",
+          "upgrades": [],
+          "payout": {
+            "min": 900000,
+            "max": 1099800
+          },
+          "costPerCycle": null,
+          "activeMinutes": null,
+          "notes": [
+            "GTA$1,099,800 untuk penyelesaian pertama tiap periode mingguan, GTA$900,000 untuk pengulangan (setelah Title Update 1.73).",
+            "Durasi pengerjaan belum terverifikasi, sehingga GTA$/jam tidak dihitung."
+          ]
+        }
+      ],
+      "tips": [
+        "Brankas Agency terisi hingga GTA$20,000 per hari game setelah sekitar 200 Security Contract; kapasitas GTA$250,000."
+      ],
+      "cautions": [
+        "Bayaran Payphone Hit berbeda antarsumber (GTA$45,000–85,000), jadi belum dipakai dalam perhitungan."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Agencies",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/agencies"
+        },
+        {
+          "title": "GTA Side: Best paying missions after 1.73",
+          "url": "https://gtaside.com/tips/gta5/best-missions/"
+        },
+        {
+          "title": "GTA BOOM: Payphone Hits",
+          "url": "https://www.gtaboom.com/the-contract-payphone-hits-c9a3"
+        }
+      ]
+    },
+    {
+      "id": "salvage-yard",
+      "name": "Salvage Yard",
+      "category": "misi",
+      "summary": "Tiga perampokan mobil per minggu dengan bayaran besar, ditambah pendapatan pasif dari layanan derek.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": 1620000,
+        "note": "Lokasi termurah: Paleto Bay. Lokasi lain GTA$2,030,000–2,690,000."
+      },
+      "requirements": [
+        "Tidak butuh properti lain."
+      ],
+      "upgrades": [
+        {
+          "id": "tow-truck",
+          "name": "Tow Truck",
+          "price": 1100000,
+          "recommended": false,
+          "effect": "Membuka pendapatan pasif derek hingga GTA$24,000 per hari game. Versi Beater GTA$650,000."
+        },
+        {
+          "id": "wall-safe",
+          "name": "Wall Safe",
+          "price": 750000,
+          "recommended": false,
+          "effect": "Menaikkan kapasitas brankas pasif menjadi GTA$250,000."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "robbery",
+          "label": "Satu perampokan (jual ke Yusuf)",
+          "upgrades": [],
+          "payout": {
+            "min": 197000,
+            "max": 405000
+          },
+          "costPerCycle": null,
+          "activeMinutes": {
+            "min": 40,
+            "max": 80
+          },
+          "estimates": [
+            "activeMinutes"
+          ],
+          "limit": "3 perampokan per minggu",
+          "notes": [
+            "Nilai jual tergantung mobil target minggu itu; kerusakan menurunkan harga. Bonus tantangan hingga GTA$50,000 tidak dihitung.",
+            "Waktu aktif diturunkan dari perkiraan 2–4 jam untuk 3 perampokan."
+          ],
+          "limitPerWeek": 3
+        }
+      ],
+      "tips": [
+        "Mobil bisa juga dihancurkan untuk 80% nilainya, atau disimpan dengan biaya GTA$20,000."
+      ],
+      "cautions": [
+        "Rentang bayaran berbeda antarsumber; dipakai batas bawah dan atas dari keduanya."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Salvage Yards",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/salvage-yards"
+        },
+        {
+          "title": "Timesaver: Salvage Yard robbery payouts 2026",
+          "url": "https://timesaver.gg/blog/gta-online-salvage-yard-robbery-payouts-2026"
+        },
+        {
+          "title": "GrindMap: GTA Online money methods",
+          "url": "https://grindmap.com/gta-online"
+        }
+      ]
+    },
+    {
+      "id": "bail-office",
+      "name": "Bail Office",
+      "category": "misi",
+      "summary": "Berburu buronan. Bayaran naik 50% sejak Mei 2026 dan semua target bisa dikerjakan sendirian.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": 1650000,
+        "note": "Lokasi termurah: Paleto Bay. Lokasi lain GTA$2,000,000–2,620,000."
+      },
+      "requirements": [
+        "Tidak butuh properti lain."
+      ],
+      "upgrades": [
+        {
+          "id": "agent",
+          "name": "Bail Enforcement Agent (per orang, maks. 2)",
+          "price": 750000,
+          "recommended": false,
+          "effect": "Mempercepat proses tahanan dan menghasilkan sekitar GTA$5,000–10,000 per tugas; harus dikirim manual."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "standard",
+          "label": "Buronan biasa (ditangkap hidup)",
+          "upgrades": [],
+          "payout": {
+            "min": 55000,
+            "max": 60000
+          },
+          "costPerCycle": null,
+          "activeMinutes": null,
+          "notes": [
+            "Ditangkap mati memotong bayaran 75%.",
+            "Durasi per buronan belum terverifikasi, sehingga GTA$/jam tidak dihitung."
+          ]
+        },
+        {
+          "id": "most-wanted",
+          "label": "Most Wanted (ditangkap hidup)",
+          "upgrades": [],
+          "payout": {
+            "min": 180000,
+            "max": 195000
+          },
+          "costPerCycle": null,
+          "activeMinutes": null,
+          "limit": "1 per hari",
+          "notes": [
+            "Bisa dikerjakan 1–4 pemain."
+          ],
+          "useForRanking": false,
+          "limitPerWeek": 7
+        }
+      ],
+      "tips": [
+        "Proses tahanan sekitar 24 menit tanpa agen, 12 menit dengan satu agen, 6 menit dengan dua agen."
+      ],
+      "cautions": [
+        "GrindMap mencantumkan GTA$35,000–75,000 untuk buronan biasa; angka GTA Boss di sini sudah memperhitungkan kenaikan Mei 2026."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Bail Office guide",
+          "url": "https://www.gtaboss.gg/gta-5-online/guides/gta-online-bail-office-guide"
+        },
+        {
+          "title": "GTA Boss: Bail Offices",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/bail-offices"
+        }
+      ]
+    },
+    {
+      "id": "hands-on-car-wash",
+      "name": "Hands On Car Wash",
+      "category": "pasif",
+      "summary": "Bisnis Money Fronts untuk mencuci uang. Pendapatannya rendah; lebih berguna sebagai pelengkap daripada sumber utama.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": 1000000,
+        "note": "Satu lokasi di Strawberry."
+      },
+      "requirements": [
+        "Terbuka setelah telepon perkenalan dari Martin Madrazo."
+      ],
+      "upgrades": [],
+      "scenarios": [
+        {
+          "id": "laundering",
+          "label": "Misi pencucian uang",
+          "upgrades": [],
+          "payout": {
+            "min": 35000,
+            "max": 35000
+          },
+          "costPerCycle": null,
+          "activeMinutes": null,
+          "limit": "4 misi per bisnis front",
+          "notes": [
+            "Pendapatan pasif kecil: GTA$750 per pembayaran, naik menjadi GTA$1,500 setelah 15 misi pencucian."
+          ]
+        }
+      ],
+      "tips": [
+        "Menaikkan nilai jual Counterfeit Cash Factory sebesar 35%."
+      ],
+      "cautions": [
+        "Tidak disarankan dibeli lebih dulu dibanding bisnis lain di daftar ini."
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Hands On Car Wash",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/hands-on-car-wash"
+        }
+      ]
+    },
+    {
+      "id": "kortz-center-heist",
+      "name": "Kortz Center Heist (Mansion)",
+      "category": "heist",
+      "summary": "Heist terbaru (Juli 2026) dengan bayaran mingguan terbesar, tetapi butuh Mansion yang sangat mahal. Tujuan jangka panjang.",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "purchase": {
+        "price": null,
+        "note": "Butuh Mansion dengan Art Studio. Total investasi sekitar GTA$16,200,000 menurut GrindMap (belum dicek silang)."
+      },
+      "requirements": [
+        "Mansion (pembaruan A Safehouse in the Hills) dengan Art Studio."
+      ],
+      "upgrades": [],
+      "scenarios": [
+        {
+          "id": "first-weekly",
+          "label": "Run pertama setelah reset Kamis",
+          "upgrades": [],
+          "payout": {
+            "min": 1218000,
+            "max": 1925000
+          },
+          "costPerCycle": null,
+          "activeMinutes": {
+            "min": 75,
+            "max": 125
+          },
+          "limit": "1 kali bayaran penuh per minggu",
+          "notes": [
+            "Bayaran tergantung lukisan target."
+          ],
+          "limitPerWeek": 1
+        },
+        {
+          "id": "repeat",
+          "label": "Run ulang di minggu yang sama",
+          "upgrades": [],
+          "payout": {
+            "min": 304500,
+            "max": 481250
+          },
+          "costPerCycle": 100000,
+          "activeMinutes": null,
+          "notes": [
+            "Dipotong biaya perencanaan GTA$100,000."
+          ],
+          "useForRanking": false
+        }
+      ],
+      "tips": [],
+      "cautions": [
+        "Harga Mansion belum diverifikasi dari dua sumber; isi modal secara manual di kalkulator."
+      ],
+      "sources": [
+        {
+          "title": "GTA Side: Best paying missions after 1.73",
+          "url": "https://gtaside.com/tips/gta5/best-missions/"
+        },
+        {
+          "title": "GrindMap: GTA Online money methods",
+          "url": "https://grindmap.com/gta-online"
+        }
+      ]
+    }
+  ]
+}
