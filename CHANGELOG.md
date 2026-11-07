@@ -1,5 +1,16 @@
 # Catatan perubahan
 
+## 0.7.0 (Fase 6, 8 November 2026)
+
+- Aset baru di database (13 entri): Weed Farm, Methamphetamine Lab, dan Cocaine Lockup (harga, upgrade, suplai, nilai stok,
+  lama produksi; skenario "tanpa upgrade" hanya sebagai pembanding dan tidak diberi peringkat). Syarat Clubhouse dan MC President dicatat.
+  Sumber tidak bertanggal ditandai "Data sebagian".
+- Gudang Nightclub: tujuh skenario barang (South American Imports, Pharmaceutical Research, Cash Creation, Cargo and Shipments,
+  Sporting Goods, Organic Produce, Printing & Copying) dengan GTA$ per jam online per teknisi. Total gudang penuh cocok dengan sumber (GTA$1,931,500).
+- Panel "Bonus GTA+" di halaman Event: status data, siklus, tanggal data dibaca, tingkat verifikasi, dan sumber. Data di `data/gtaplus.json`,
+  diperbarui manual setiap siklus. Bonus GTA+ belum masuk perhitungan karena siklus ini tidak memuat bonus untuk bisnis yang dimodelkan.
+- 71 pengujian otomatis.
+
 ## 0.6.0 (Fase 3, 7 November 2026)
 
 - Otomatisasi event mingguan: workflow GitHub Actions harian membaca RSS RockstarINTEL, mengarsipkan data lama,

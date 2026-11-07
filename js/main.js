@@ -39,6 +39,16 @@ function getEvents(force = false) {
   return eventsPromise;
 }
 
+// Bonus GTA+ bulanan: data terpisah dari event mingguan karena siklusnya berbeda.
+let gtaPlusPromise = null;
+let lastGtaPlus = null;
+function getGtaPlus(force = false) {
+  if (!gtaPlusPromise || force) {
+    gtaPlusPromise = loadJSON(DATA_SOURCES.gtaplus, { cacheKey: 'gtaplus', storage }).then((r) => (lastGtaPlus = r));
+  }
+  return gtaPlusPromise;
+}
+
 // Katalog bisnis divalidasi sebelum dipakai; entri rusak dibuang dan dilaporkan.
 let catalogPromise = null;
 let lastCatalog = null;
@@ -105,6 +115,8 @@ const ctx = {
   getEvents,
   getCatalog,
   peekEvents: () => lastEvents,
+  getGtaPlus,
+  peekGtaPlus: () => lastGtaPlus,
   peekCatalog: () => lastCatalog,
   getProgression,
   peekProgression: () => lastProgression,

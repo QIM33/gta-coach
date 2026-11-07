@@ -73,6 +73,15 @@ export function eventStatus(data, now = new Date()) {
   return { state: 'active', start, end };
 }
 
+/**
+ * Status data bonus GTA+ (siklus bulanan). Memakai aturan yang sama dengan event mingguan,
+ * tetapi periodenya dibaca dari `cycle`, bukan `week`.
+ */
+export function gtaPlusStatus(data, now = new Date()) {
+  if (!data || typeof data !== 'object') return { state: 'none' };
+  return eventStatus({ ...data, week: data.cycle }, now);
+}
+
 /** Teks dan gaya lencana untuk setiap status event. */
 export const EVENT_STATE_LABEL = Object.freeze({
   none: { text: 'Belum ada data', tone: 'neutral' },

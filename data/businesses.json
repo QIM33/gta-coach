@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "verifiedAt": "2026-11-07",
+  "verifiedAt": "2026-11-08",
   "platformNote": "Data dicek untuk GTA Online versi PC Enhanced, setelah Title Update 1.73 (Juli 2026). Ketersediaan di PC Legacy belum dicek.",
   "fieldGuide": {
     "payout": "Pendapatan kotor per siklus (min–maks) sebelum dikurangi biaya per siklus.",
@@ -262,10 +262,165 @@
             "Hanya terisi saat Anda berada di sesi. Brankas penuh di GTA$250,000 dan harus dikosongkan.",
             "Popularitas dijaga lewat misi manajemen klub atau memesan ulang DJ (GTA$10,000)."
           ]
+        },
+        {
+          "id": "goods-sa-imports",
+          "label": "Gudang: South American Imports",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 270000,
+            "max": 270000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 1200,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "10 unit × GTA$27,000 = GTA$270,000 untuk gudang penuh. 120 menit per unit dengan upgrade peralatan, sekitar GTA$13,500 per jam online.",
+            "Dibuka oleh: Cocaine Lockup. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
+        },
+        {
+          "id": "goods-pharma",
+          "label": "Gudang: Pharmaceutical Research",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 229500,
+            "max": 229500
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 1200,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "20 unit × GTA$11,475 = GTA$229,500 untuk gudang penuh. 60 menit per unit dengan upgrade peralatan, sekitar GTA$11,475 per jam online.",
+            "Dibuka oleh: Methamphetamine Lab. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
+        },
+        {
+          "id": "goods-cash",
+          "label": "Gudang: Cash Creation",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 189000,
+            "max": 189000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 1200,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "40 unit × GTA$4,725 = GTA$189,000 untuk gudang penuh. 30 menit per unit dengan upgrade peralatan, sekitar GTA$9,450 per jam online.",
+            "Dibuka oleh: Counterfeit Cash Factory. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
+        },
+        {
+          "id": "goods-cargo",
+          "label": "Gudang: Cargo and Shipments",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 500000,
+            "max": 500000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 3500,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "50 unit × GTA$10,000 = GTA$500,000 untuk gudang penuh. 70 menit per unit dengan upgrade peralatan, sekitar GTA$8,571 per jam online.",
+            "Dibuka oleh: Hangar atau Special Cargo warehouse. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
+        },
+        {
+          "id": "goods-sporting",
+          "label": "Gudang: Sporting Goods",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 500000,
+            "max": 500000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 4000,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "100 unit × GTA$5,000 = GTA$500,000 untuk gudang penuh. 40 menit per unit dengan upgrade peralatan, sekitar GTA$7,500 per jam online.",
+            "Dibuka oleh: Bunker. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
+        },
+        {
+          "id": "goods-organic",
+          "label": "Gudang: Organic Produce",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 162000,
+            "max": 162000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 1600,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "80 unit × GTA$2,025 = GTA$162,000 untuk gudang penuh. 20 menit per unit dengan upgrade peralatan, sekitar GTA$6,075 per jam online.",
+            "Dibuka oleh: Weed Farm. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
+        },
+        {
+          "id": "goods-printing",
+          "label": "Gudang: Printing & Copying",
+          "upgrades": [
+            "equipment"
+          ],
+          "payout": {
+            "min": 81000,
+            "max": 81000
+          },
+          "costPerCycle": 0,
+          "activeMinutes": null,
+          "cycleMinutes": 900,
+          "passive": true,
+          "useForRanking": false,
+          "estimates": [],
+          "notes": [
+            "60 unit × GTA$1,350 = GTA$81,000 untuk gudang penuh. 15 menit per unit dengan upgrade peralatan, sekitar GTA$5,400 per jam online.",
+            "Dibuka oleh: Document Forgery Office. Satu teknisi per barang.",
+            "Belum dipotong komisi Tony (10%, maksimal GTA$100,000 per penjualan). Kapasitas lantai gudang bisa membatasi jumlah unit."
+          ]
         }
       ],
       "tips": [
-        "Gudang (7 kategori barang) membutuhkan bisnis pemasok dan teknisi; belum dihitung di sini."
+        "Urutan GTA$ per jam online per teknisi (upgrade penuh): South American Imports 13,500 > Pharmaceutical 11,475 > Cash Creation 9,450 > Cargo 8,571 > Sporting Goods 7,500 > Organic Produce 6,075 > Printing & Copying 5,400. Dengan lima teknisi, pilih lima teratas dari barang yang sudah terbuka.",
+        "Barang terbuka jika Anda memiliki bisnis pemasoknya; stok dan suplai bisnis pemasok tidak dipakai."
       ],
       "cautions": [
         "Penjualan gudang di atas 89 barang butuh Mule Custom, di atas 179 butuh Pounder Custom."
@@ -274,6 +429,311 @@
         {
           "title": "GTA Boss: Nightclubs",
           "url": "https://www.gtaboss.gg/gta-5-online/businesses/nightclubs"
+        },
+        {
+          "title": "GTA BOOM: Nightclub Warehouse Business Guide (diperbarui 27 Jul 2026)",
+          "url": "https://www.gtaboom.com/gta-online-nightclub-warehouse-business-guide/"
+        }
+      ]
+    },
+    {
+      "category": "produksi",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "upgrades": [
+        {
+          "id": "equipment",
+          "name": "Upgrade peralatan",
+          "price": 990000,
+          "recommended": true,
+          "effect": "Nilai stok +30% dan biaya suplai setengahnya (sekitar GTA$240,000 menjadi GTA$120,000 untuk stok penuh)."
+        },
+        {
+          "id": "staff",
+          "name": "Upgrade staf",
+          "price": 273000,
+          "recommended": true,
+          "effect": "Produksi lebih cepat. Sumber hanya memberi angka gabungan: sekitar 4 menit per unit jika semua upgrade terpasang, sekitar 6 menit tanpa upgrade."
+        },
+        {
+          "id": "security",
+          "name": "Upgrade keamanan",
+          "price": 313500,
+          "recommended": false,
+          "effect": "Tidak menambah pendapatan."
+        }
+      ],
+      "tips": [
+        "Stok yang penuh menghentikan produksi: jual sebelum penuh jika Anda akan lama tidak bermain.",
+        "Barang Organic Produce di Nightclub tidak memakai stok atau suplai Weed Farm; Weed Farm hanya membuka kuncinya."
+      ],
+      "cautions": [
+        "Halaman sumber tidak mencantumkan tanggal pembaruan; angka belum dicek ulang setelah Title Update 1.73."
+      ],
+      "id": "weed-farm",
+      "name": "Weed Farm",
+      "summary": "Bisnis MC dengan stok terbanyak (80 unit) dan nilai per unit paling kecil. Pembuka barang Organic Produce di Nightclub.",
+      "purchase": {
+        "price": 715000,
+        "note": "Lokasi termurah: San Chianski Mountain Range. Lokasi lain GTA$805,200–1,358,500. Butuh Clubhouse (termurah GTA$200,000 di Great Chaparral) dan status MC President (gratis lewat Interaction Menu). Satu Clubhouse cukup untuk semua bisnis MC; harganya belum dihitung ke modal di sini."
+      },
+      "requirements": [
+        "Punya Clubhouse dan terdaftar sebagai MC President.",
+        "Dibeli lewat laptop The Open Road di Clubhouse."
+      ],
+      "scenarios": [
+        {
+          "id": "full",
+          "label": "Peralatan + staf terpasang",
+          "upgrades": [
+            "equipment",
+            "staff"
+          ],
+          "payout": {
+            "min": 315000,
+            "max": 315000
+          },
+          "costPerCycle": 120000,
+          "activeMinutes": null,
+          "productionMinutes": 320,
+          "estimates": [],
+          "notes": [
+            "80 unit stok penuh bernilai GTA$315,000; suplai GTA$120,000 (gratis jika dicuri).",
+            "Penjualan sampai 4 kendaraan: 1 kendaraan di bawah 21 unit, 2 kendaraan untuk 21–40 unit, 3 untuk 41–60 unit, 4 untuk 61 unit ke atas.",
+            "Sumber mencantumkan dua angka per jam yang berbeda (GTA$59,063 dan GTA$36,792). Perhitungan situs: GTA$195,000 / 5,3 jam = sekitar GTA$36,600 per jam online.",
+            "Durasi pengerjaan misi jual belum terverifikasi, sehingga GTA$ per jam aktif tidak dihitung."
+          ]
+        },
+        {
+          "id": "base",
+          "label": "Tanpa upgrade",
+          "upgrades": [],
+          "payout": {
+            "min": 243000,
+            "max": 243000
+          },
+          "costPerCycle": 240000,
+          "activeMinutes": null,
+          "productionMinutes": 480,
+          "estimates": [
+            "costPerCycle",
+            "productionMinutes"
+          ],
+          "notes": [
+            "Jika suplai dibeli, laba tanpa upgrade hampir nol. Biaya suplai dan lama produksi di sini adalah angka perkiraan sumber (\"sekitar\").",
+            "Skenario pembanding: tidak dipakai mesin rekomendasi karena labanya hampir nol atau negatif jika suplai dibeli."
+          ],
+          "useForRanking": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Weed Farms",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/weed-farms"
+        }
+      ]
+    },
+    {
+      "category": "produksi",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "upgrades": [
+        {
+          "id": "equipment",
+          "name": "Upgrade peralatan",
+          "price": 1100000,
+          "recommended": true,
+          "effect": "Nilai stok +30% dan biaya suplai setengahnya (sekitar GTA$375,000 menjadi GTA$187,500)."
+        },
+        {
+          "id": "staff",
+          "name": "Upgrade staf",
+          "price": 331500,
+          "recommended": true,
+          "effect": "Produksi lebih cepat. Sumber memberi angka gabungan: sekitar 18 menit per unit jika semua upgrade terpasang, sekitar 30 menit tanpa upgrade."
+        },
+        {
+          "id": "security",
+          "name": "Upgrade keamanan",
+          "price": 513000,
+          "recommended": false,
+          "effect": "Tidak menambah pendapatan."
+        }
+      ],
+      "tips": [],
+      "cautions": [
+        "Halaman sumber tidak mencantumkan tanggal pembaruan; angka belum dicek ulang setelah Title Update 1.73."
+      ],
+      "id": "meth-lab",
+      "name": "Methamphetamine Lab",
+      "summary": "Bisnis MC bernilai menengah: 20 unit stok per batch. Pembuka barang Pharmaceutical Research di Nightclub.",
+      "purchase": {
+        "price": 910000,
+        "note": "Lokasi termurah: Grand Senora Desert. Lokasi lain GTA$1,024,800–1,729,000. Butuh Clubhouse (termurah GTA$200,000 di Great Chaparral) dan status MC President (gratis lewat Interaction Menu). Satu Clubhouse cukup untuk semua bisnis MC; harganya belum dihitung ke modal di sini."
+      },
+      "requirements": [
+        "Punya Clubhouse dan terdaftar sebagai MC President.",
+        "Dibeli lewat laptop The Open Road di Clubhouse."
+      ],
+      "scenarios": [
+        {
+          "id": "full",
+          "label": "Peralatan + staf terpasang",
+          "upgrades": [
+            "equipment",
+            "staff"
+          ],
+          "payout": {
+            "min": 446250,
+            "max": 446250
+          },
+          "costPerCycle": 187500,
+          "activeMinutes": null,
+          "productionMinutes": 360,
+          "estimates": [],
+          "notes": [
+            "20 unit stok penuh bernilai GTA$446,250; suplai GTA$187,500 (gratis jika dicuri). Laba bersih GTA$258,750 per stok penuh (6 jam).",
+            "Durasi pengerjaan misi jual belum terverifikasi, sehingga GTA$ per jam aktif tidak dihitung."
+          ]
+        },
+        {
+          "id": "base",
+          "label": "Tanpa upgrade",
+          "upgrades": [],
+          "payout": {
+            "min": 344250,
+            "max": 344250
+          },
+          "costPerCycle": 375000,
+          "activeMinutes": null,
+          "productionMinutes": 600,
+          "estimates": [
+            "costPerCycle",
+            "productionMinutes"
+          ],
+          "notes": [
+            "Jika suplai dibeli, tanpa upgrade Anda rugi per stok (pendapatan lebih kecil dari biaya suplai). Hanya masuk akal dengan suplai curian.",
+            "Skenario pembanding: tidak dipakai mesin rekomendasi karena labanya hampir nol atau negatif jika suplai dibeli."
+          ],
+          "useForRanking": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Methamphetamine Labs",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/meth-labs"
+        }
+      ]
+    },
+    {
+      "category": "produksi",
+      "platforms": [
+        "pc-enhanced"
+      ],
+      "solo": "ya",
+      "dataStatus": "sebagian",
+      "upgrades": [
+        {
+          "id": "equipment",
+          "name": "Upgrade peralatan",
+          "price": 935000,
+          "recommended": true,
+          "effect": "Nilai stok naik dan biaya suplai setengahnya (sekitar GTA$375,000 menjadi GTA$187,500)."
+        },
+        {
+          "id": "staff",
+          "name": "Upgrade staf",
+          "price": 390000,
+          "recommended": true,
+          "effect": "Produksi lebih cepat: sekitar 5 jam untuk stok penuh jika semua upgrade terpasang, sekitar 8,3 jam tanpa upgrade."
+        },
+        {
+          "id": "security",
+          "name": "Upgrade keamanan",
+          "price": 570000,
+          "recommended": false,
+          "effect": "Tidak menambah pendapatan."
+        }
+      ],
+      "tips": [
+        "Cukup memiliki Cocaine Lockup untuk membuka South American Imports di Nightclub; stok dan suplainya sendiri tidak dipakai teknisi Nightclub."
+      ],
+      "cautions": [
+        "Halaman sumber tidak mencantumkan tanggal pembaruan; angka belum dicek ulang setelah Title Update 1.73."
+      ],
+      "id": "cocaine-lockup",
+      "name": "Cocaine Lockup",
+      "summary": "Bisnis MC dengan nilai per unit tertinggi (10 unit per batch). Memiliki Cocaine Lockup membuka barang South American Imports di Nightclub.",
+      "purchase": {
+        "price": 975000,
+        "note": "Lokasi termurah: Alamo Sea. Lokasi lain GTA$1,098,000–1,852,500. Butuh Clubhouse (termurah GTA$200,000 di Great Chaparral) dan status MC President (gratis lewat Interaction Menu). Satu Clubhouse cukup untuk semua bisnis MC; harganya belum dihitung ke modal di sini."
+      },
+      "requirements": [
+        "Punya Clubhouse dan terdaftar sebagai MC President.",
+        "Dibeli lewat laptop The Open Road di Clubhouse."
+      ],
+      "scenarios": [
+        {
+          "id": "full",
+          "label": "Peralatan + staf terpasang",
+          "upgrades": [
+            "equipment",
+            "staff"
+          ],
+          "payout": {
+            "min": 525000,
+            "max": 525000
+          },
+          "costPerCycle": 187500,
+          "activeMinutes": null,
+          "productionMinutes": 300,
+          "estimates": [],
+          "notes": [
+            "10 unit stok penuh bernilai GTA$525,000; suplai GTA$187,500 (gratis jika dicuri). Laba bersih GTA$337,500 per stok penuh, sekitar GTA$67,500 per jam online.",
+            "Satu sumber menulis sekitar GTA$105,000 per jam; hitungan situs dari angka stok dan lama produksi memberi GTA$67,500.",
+            "Stok penuh bisa memunculkan beberapa kendaraan pengiriman, jadi sulit dijual sendirian."
+          ]
+        },
+        {
+          "id": "base",
+          "label": "Tanpa upgrade",
+          "upgrades": [],
+          "payout": {
+            "min": 405000,
+            "max": 405000
+          },
+          "costPerCycle": 375000,
+          "activeMinutes": null,
+          "productionMinutes": 500,
+          "estimates": [
+            "costPerCycle",
+            "productionMinutes"
+          ],
+          "notes": [
+            "Jika suplai dibeli, laba tanpa upgrade sangat tipis. Pasang upgrade peralatan sebelum membeli suplai.",
+            "Skenario pembanding: tidak dipakai mesin rekomendasi karena labanya hampir nol atau negatif jika suplai dibeli."
+          ],
+          "useForRanking": false
+        }
+      ],
+      "sources": [
+        {
+          "title": "GTA Boss: Cocaine Lockups",
+          "url": "https://www.gtaboss.gg/gta-5-online/businesses/cocaine-lockups"
+        },
+        {
+          "title": "GTA Boss: Panduan Cocaine Lockup",
+          "url": "https://www.gtaboss.gg/gta-5-online/guides/everything-you-need-to-know-about-the-cocaine-lockup-in-gta-v-online"
+        },
+        {
+          "title": "GTA Intel: Cocaine Lockup Guide",
+          "url": "https://gtaintel.com/news/gta-online-cocaine-lockup-guide"
         }
       ]
     },

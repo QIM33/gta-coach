@@ -4,13 +4,14 @@
 
 export const APP = Object.freeze({
   name: 'Business Coach untuk GTA Online',
-  version: '0.6.0',
-  phase: 'Fase 3',
+  version: '0.7.0',
+  phase: 'Fase 6',
   newswireUrl: 'https://www.rockstargames.com/newswire',
 });
 
 export const DATA_SOURCES = Object.freeze({
   events: './data/events/current.json',
+  gtaplus: './data/gtaplus.json',
   businesses: './data/businesses.json',
   progression: './data/progression.json',
   guides: './data/guides.json',

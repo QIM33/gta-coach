@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { validateCatalog, validateEntry } from '../js/engine/catalog.js';
 import { calculate, scenarioInput, affordability } from '../js/engine/calculator.js';
-import { eventStatus, eventMultiplierFor, eventEffectsFor } from '../js/data.js';
+import { eventStatus, eventMultiplierFor, eventEffectsFor, gtaPlusStatus } from '../js/data.js';
 
 const catalogRaw = JSON.parse(fs.readFileSync(new URL('../data/businesses.json', import.meta.url), 'utf8'));
 const eventsRaw = JSON.parse(fs.readFileSync(new URL('./fixtures/event-heist-week.json', import.meta.url), 'utf8'));
@@ -115,4 +115,50 @@ test('efek event hanya berlaku saat event aktif', () => {
   assert.equal(eventMultiplierFor(eventsRaw, active, 'acid-lab'), 1);
   const fake = { ...eventsRaw, items: [{ type: 'multiplier', target: 'acid-lab', value: 2 }] };
   assert.equal(eventMultiplierFor(fake, active, 'acid-lab'), 2);
+});
+
+test('bisnis MC: laba per stok penuh sesuai angka sumber dan skenario pembanding tidak diberi peringkat', () => {
+  const { entries } = validateCatalog(catalogRaw);
+  const net = (id, sc) => {
+    const e = entries.find((x) => x.id === id);
+    return calculate(scenarioInput(e, e.scenarios.find((s) => s.id === sc), { upgrades: ['equipment', 'staff'] })).net;
+  };
+  assert.deepEqual(net('weed-farm', 'full'), { min: 195000, max: 195000 });
+  assert.deepEqual(net('meth-lab', 'full'), { min: 258750, max: 258750 });
+  assert.deepEqual(net('cocaine-lockup', 'full'), { min: 337500, max: 337500 });
+  for (const id of ['weed-farm', 'meth-lab', 'cocaine-lockup']) {
+    const e = entries.find((x) => x.id === id);
+    assert.equal(e.scenarios.find((s) => s.id === 'base').useForRanking, false, id);
+    assert.ok(e.requirements.some((r) => r.includes('Clubhouse')), id);
+  }
+});
+
+test('gudang Nightclub: GTA$/jam per barang dan total gudang penuh cocok dengan sumber', () => {
+  const { entries } = validateCatalog(catalogRaw);
+  const nc = entries.find((e) => e.id === 'nightclub');
+  const goods = nc.scenarios.filter((s) => s.id.startsWith('goods-'));
+  assert.equal(goods.length, 7);
+  assert.equal(goods.reduce((sum, s) => sum + s.payout.max, 0), 1931500); // total sumber: GTA$1,931,500
+  const perHour = Object.fromEntries(goods.map((s) => [s.id, Math.round(calculate(scenarioInput(nc, s, { upgrades: ['equipment'] })).perOnlineHour.max)]));
+  assert.deepEqual(perHour, {
+    'goods-sa-imports': 13500,
+    'goods-pharma': 11475,
+    'goods-cash': 9450,
+    'goods-cargo': 8571,
+    'goods-sporting': 7500,
+    'goods-organic': 6075,
+    'goods-printing': 5400,
+  });
+  assert.ok(goods.every((s) => s.useForRanking === false));
+});
+
+test('data GTA+: struktur valid, status mengikuti siklus, dan draf tidak dipakai', () => {
+  const plus = JSON.parse(fs.readFileSync(new URL('../data/gtaplus.json', import.meta.url), 'utf8'));
+  assert.equal(gtaPlusStatus(plus, new Date('2026-11-08T00:00:00Z')).state, 'draft'); // satu sumber sekunder
+  const verified = { ...plus, status: 'verified' };
+  assert.equal(gtaPlusStatus(verified, new Date('2026-11-08T00:00:00Z')).state, 'active');
+  assert.equal(gtaPlusStatus(verified, new Date('2026-12-03T10:00:00Z')).state, 'expired');
+  assert.equal(gtaPlusStatus(verified, new Date('2026-11-01T00:00:00Z')).state, 'upcoming');
+  assert.equal(gtaPlusStatus(null).state, 'none');
+  for (const item of plus.items) assert.ok(typeof item.type === 'string' && typeof item.label === 'string');
 });

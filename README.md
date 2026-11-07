@@ -3,7 +3,7 @@
 Website mentor untuk pemain GTA Online pemula: mengelola saldo GTA$, bisnis, dan strategi keuntungan.
 Dibangun dengan HTML, CSS, dan JavaScript murni, tanpa framework dan tanpa proses build.
 
-Status: **semua fase selesai**, versi 0.6.0. Event mingguan diambil otomatis setelah repo dipublikasikan di GitHub.
+Status: **semua fase selesai**, versi 0.7.0. Event mingguan diambil otomatis setelah repo dipublikasikan di GitHub.
 
 ## Menjalankan di PC (Windows)
 
@@ -74,6 +74,7 @@ gta-coach/
 │   ├── businesses.json       database bisnis + sumber
 │   ├── progression.json      tahapan pemula
 │   ├── guides.json           isi halaman Panduan + sumber
+│   ├── gtaplus.json          bonus GTA+ siklus bulanan (diisi manual)
 │   └── events/current.json   event mingguan yang sedang berlaku
 ├── scripts/
 │   ├── fetch-events.mjs      pengambil draf event mingguan (GitHub Actions)
@@ -153,9 +154,10 @@ Jalankan `npm test`: salah satu tes memastikan file ini valid. Entri yang rusak 
 
 - Rekomendasi hanya sebaik datanya: 5 dari 10 entri masih "Data sebagian", dan bisnis yang durasi atau bayarannya belum diketahui tidak diberi peringkat.
 - Waktu aktif sebagian bisnis adalah perkiraan; ubah di kalkulator jika pengalaman Anda berbeda.
-- Database berisi 10 bisnis dan heist untuk PC Enhanced. Sebagian entri ditandai "Data sebagian" karena durasi atau bayarannya belum bisa dicek dari dua sumber.
+- Database berisi 13 bisnis dan heist untuk PC Enhanced. Sebagian entri ditandai "Data sebagian" karena durasi atau bayarannya belum bisa dicek dari dua sumber.
 - Data event diisi manual. Event minggu 5–11 November 2026 dicek silang dari tiga sumber sekunder, belum langsung dari Newswire.
 - Pelacak stok bisnis sengaja tidak dibuat: produksi hanya berjalan saat Anda online, sehingga pengatur waktu di website tidak bisa menebak isi stok dengan jujur.
+- Data GTA+ (`data/gtaplus.json`) diisi manual setiap siklus bulanan dan belum dipakai dalam perhitungan.
 - Otomatisasi event bergantung pada RSS RockstarINTEL. Hasilnya tetap draf dari sumber sekunder sampai Anda mencocokkannya dengan Newswire.
 
 Proyek penggemar, tidak berafiliasi dengan Rockstar Games atau Take-Two Interactive.

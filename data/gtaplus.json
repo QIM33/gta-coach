@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "title": "GTA+ siklus November 2026 (bulan ke-56)",
+  "cycle": {
+    "startsAt": "2026-11-05T10:00:00Z",
+    "endsAt": "2026-12-03T10:00:00Z"
+  },
+  "timeNote": "Sumber menyebut siklus 5 November sampai 2 Desember 2026. Jam 10.00 UTC (reset Kamis) adalah asumsi.",
+  "sourceLevel": "secondary",
+  "verificationNote": "Hanya satu sumber sekunder (RockstarINTEL) yang dibaca. Cocokkan dengan halaman GTA+ Rockstar sebelum mengandalkannya. Sumber tidak mencantumkan bonus untuk Nightclub, bisnis MC, Acid Lab, Bunker, atau Cayo Perico, sehingga tidak ada pengali GTA+ yang dipakai dalam perhitungan.",
+  "source": "https://store.rockstargames.com/gta-plus",
+  "sources": [
+    {
+      "title": "RockstarINTEL: GTA+ Month 56, semua hadiah November 2026",
+      "url": "https://rockstarintel.com/gta-month-56-all-rewards-for-november-2026/"
+    },
+    {
+      "title": "Rockstar Games: GTA+",
+      "url": "https://store.rockstargames.com/gta-plus"
+    }
+  ],
+  "fetchedAt": "2026-11-08T00:00:00Z",
+  "verifiedAt": "2026-11-08T00:00:00Z",
+  "items": [
+    {
+      "type": "cash",
+      "label": "GTA$500,000 masuk ke akun Maze Bank setiap bulan berlangganan",
+      "amount": 500000
+    },
+    {
+      "type": "multiplier",
+      "value": 2,
+      "label": "Contact Missions",
+      "note": "GTA$ dan RP"
+    },
+    {
+      "type": "multiplier",
+      "value": 2,
+      "label": "Vehicle Cargo Sell Missions",
+      "note": "GTA$ dan RP"
+    },
+    {
+      "type": "bonus",
+      "label": "Special Cargo Sourcing: kecepatan 2x"
+    },
+    {
+      "type": "discount",
+      "percent": 60,
+      "label": "Special Cargo Warehouse dan Vehicle Warehouse"
+    },
+    {
+      "type": "discount",
+      "percent": 75,
+      "label": "Amunisi dan body armor"
+    },
+    {
+      "type": "discount",
+      "percent": 20,
+      "label": "Kendaraan bergilir di Vinewood Car Club"
+    },
+    {
+      "type": "free",
+      "label": "Grotti Itali RSX selama satu minggu (harga normal GTA$3,465,000), klaim di Vinewood Car Club"
+    },
+    {
+      "type": "free",
+      "label": "Cat Chameleon White Prismatic Pearl, lukisan Mansion \"Sod Off\", Pop Art Revere Collar Shirt, skin Baseball Bat Blagueurs dan Knife Snakeskin"
+    },
+    {
+      "type": "perk",
+      "label": "Tetap berlaku: 5 slot pesawat tambahan, 2 putaran Lucky Wheel per 24 jam, taxi fast travel gratis, kemampuan MC, CEO, dan VIP gratis, Gun Van selalu tampil di peta"
+    }
+  ]
+}

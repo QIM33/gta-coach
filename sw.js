@@ -3,7 +3,7 @@
 // lalu menyimpan salinannya. Saat offline, salinan terakhir yang dipakai.
 // Naikkan CACHE_VERSION setiap rilis agar salinan lama dibersihkan.
 
-const CACHE_VERSION = 'gtacoach-0.6.0';
+const CACHE_VERSION = 'gtacoach-0.7.0';
 
 const APP_SHELL = [
   './',
@@ -38,6 +38,7 @@ const APP_SHELL = [
   './js/views/upcoming.js',
   './data/businesses.json',
   './data/events/current.json',
+  './data/gtaplus.json',
   './data/progression.json',
   './data/guides.json',
   './icons/icon-192.png',
