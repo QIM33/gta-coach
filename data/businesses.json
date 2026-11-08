@@ -549,7 +549,7 @@
           "name": "Upgrade peralatan",
           "price": 1100000,
           "recommended": true,
-          "effect": "Nilai stok +30% dan biaya suplai setengahnya (sekitar GTA$375,000 menjadi GTA$187,500)."
+          "effect": "Teks di game: mempercepat produksi, menaikkan nilai produk, dan membuat suplai lebih awet. Menurut sumber luar: nilai stok +30% dan biaya suplai setengahnya (sekitar GTA$375,000 menjadi GTA$187,500). Harga di laptop The Open Road (8 Nov 2026) cocok: peralatan GTA$1,100,000, staf GTA$331,500, keamanan GTA$513,000."
         },
         {
           "id": "staff",
